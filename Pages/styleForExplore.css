@@ -1,0 +1,23 @@
+#headingOne {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+}
+
+#Video1 {
+    display: flex;
+    justify-content: center;
+    /* centers horizontally */
+    align-items: center;
+    /* centers vertically */
+    height: 100vh;
+    /* optional: full screen height */
+    background-color: white;
+    /* optional: better visual contrast */
+}
+
+.promo-video {
+    max-width: 100%;
+    height: auto;
+}

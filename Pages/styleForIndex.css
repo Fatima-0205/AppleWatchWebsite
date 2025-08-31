@@ -1,0 +1,494 @@
+.body {
+    background-color: whitesmoke;
+}
+
+.background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 0;
+    white-space: normal;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.background-text h1 {
+    font-size: 80px;
+    font-weight: 800;
+    color: black;
+    line-height: 1.1;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.nav-buttons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn {
+    padding: 8px 16px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.details-section {
+    margin-top: 100vh;
+    padding: 40px;
+    max-width: 600px;
+    margin-left: 40%;
+    margin-right: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+}
+
+.details-section h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.details-section h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 20px 0;
+    color: #000;
+}
+
+.details-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-left: 70%;
+}
+
+#display {
+    margin-left: 70%;
+}
+
+#subHeading {
+    margin-left: 70%;
+}
+
+.connect-section {
+    margin-top: 40vh;
+    /* Makes it appear after scrolling */
+    padding: 40px;
+    max-width: 600px;
+    margin-left: 100px;
+    /* Shifts content to the right */
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+}
+
+.connect-section h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.connect-section h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 20px 0;
+    color: #000;
+    line-height: 1.2;
+}
+
+.connect-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.connect-section2 {
+    margin-top: 40vh;
+    /* Makes it appear after scrolling */
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    margin-left: 25%;
+    /* Shifts content to the right */
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+}
+
+.connect-section2 h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.connect-section2 h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 20px 0;
+    color: #000;
+    line-height: 1.2;
+}
+
+
+/* For page -2*/
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #e5e5e5;
+    color: #000;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-buttons button {
+    border: 2px solid black;
+    background: white;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.left-content {
+    flex: 1;
+    max-width: 75%;
+    background: #000000;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.left-content h1 {
+    font-size: 3em;
+    margin: 0 0 30px 0;
+    color: white;
+}
+
+.left-content img {
+    width: 75%;
+    border-radius: 20px;
+    display: block;
+}
+
+
+/*!!!!!!!!!!!!!!!!!! page 3!!!!!!!!!!!!!!!!!! */
+
+
+/*body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}*/
+
+.lineup-section {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.lineup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    padding: 0 10px;
+}
+
+.lineup-header h1 {
+    font-size: 2.5rem;
+    color: #1d1d1f;
+    margin: 0;
+}
+
+.compare-link {
+    color: #0071e3;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.watch-lineup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    background-color: whitesmoke;
+}
+
+.watch-card {
+    max-width: 250px;
+    background: #fff;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.watch-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    /* Ensures the image fits inside without distortion */
+    display: block;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+.color-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 10px 0;
+}
+
+.color-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.color-dots .dot.active {
+    background: #1d1d1f;
+}
+
+.watch-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    color: #1d1d1f;
+}
+
+.watch-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0069d9;
+}
+
+.rotate-btn {
+    margin-top: 15px;
+}
+
+.case-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.watch-option {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #444;
+    text-align: left;
+}
+
+.heart-icon,
+.battery-icon {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background-color: #f5f5f7;
+}
+
+.main-heading {
+    font-size: 2.4 rem;
+    font-weight: 700;
+    padding: 40px;
+    margin-left: 20%;
+    background-color: whitesmoke;
+}
+
+.watch-studio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.watch-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.watch-text h2 {
+    font-size: 3 rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.watch-text p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    font-weight: 500;
+}
+
+.watch-text button {
+    padding: 10px 20px;
+    background: white;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 1px solid #d2d2d7;
+    /* light gray border like Apple’s style */
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    font-size: 15px;
+    border-color: blueviolet;
+    margin-left: 5%;
+}
+
+.watch-text button:hover {
+    border-color: #999;
+}
+
+.watch-grid {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    min-width: 300px;
+}
+
+.watch-grid img {
+    width: 540px;
+    height: 400px;
+}
+
+
+/*!!!!!!!!!!Footer!!!!!!!!!!!!!!*/
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: black;
+    color: black;
+}
+
+.watch-section {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.watch-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.watch-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 220px;
+    margin: 10px;
+}
+
+.column h4 {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 8px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.column ul li {
+    margin: 6px 0;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.column ul li a:hover {
+    text-decoration: underline;
+}

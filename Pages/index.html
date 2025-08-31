@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Page1</title>
+    <link rel="stylesheet" type="text/css" href="styleForIndex.css">
+    <style>
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+        }
+        
+        body {
+            margin: 0;
+            height: 90vh;
+            background: transparent;
+            /* Required for scroll animation */
+        }
+    </style>
+</head>
+
+<body class="body">
+
+    <!-- 3D CANVAS -->
+    <canvas id="spline-canvas"></canvas>
+
+    <!-- MAIN WEBSITE CONTENT -->
+    <div class="background-text">
+        <h1>APPLE WATCH<br>SERIES 9</h1>
+    </div>
+
+    <div class="nav-buttons">
+        <button class="nav-btn"><a href="index.html">HOME</a></button>
+        <button class="nav-btn"><a href="AboutPage.html">ABOUT</a></button>
+        <button class="nav-btn"><a href="Contact.html">CONTACT</a></button>
+    </div>
+
+    <div class="details-section">
+        <h4 id="display">2x brighter display</h4>
+        <h2 id="subHeading">A brilliant <br>breakthrough.</h2>
+        <p>
+            The advanced display system in Series 9 boosts the maximum brightness up to 2000 nits — double Series 8 — so it’s easier to read in full sun. It’s also better in low-light situations, like a movie theater, because it dims to just 1 nit.
+        </p>
+    </div>
+
+    <div class="connect-section">
+        <h4>Connect</h4>
+        <h2>Everything at the<br>speed of life.</h2>
+        <p>
+            Apple Watch keeps you connected to the people and things that you care about, right from your wrist. And with a cellular plan, you can do it all without your iPhone nearby.
+        </p>
+    </div>
+
+    <div class="connect-section2">
+        <h4>Apple Watch Studio</h4>
+        <h2>Any case.Any band.<br>Any style you want.</h2>
+    </div>
+
+    <div class="main-section">
+        <div class="left-content">
+            <h1>Double Tap</h1>
+            <img src="..\Images\hand2.webp" alt="Apple Watch on hand" />
+            <p style="color :white;">Gestures make Apple Watch even easier to use anytime.especially when<br> your hands are full. Just double tap your index finger and thumb together <br>to answer a call, open a notification, play and pause music, and more.</p>
+        </div>
+    </div>
+
+    <center>
+        <div>
+            <h1>Which Apple Watch <br>is right for you?</h1>
+        </div>
+    </center>
+
+    <!-- Page 3 -->
+    <section class="lineup-section" style="background-color: whitesmoke;">
+        <div class="lineup-header">
+            <h1 style="background-color: whitesmoke;">Explore the lineup.</h1>
+        </div>
+
+        <div class="watch-lineup">
+            <!-- Watch SE -->
+            <div class="watch-card">
+                <a href="watch1.html"><img src="../Images/watch1.png" alt="Apple Watch SE" style="height: 25%;width: 100%;"></a>
+                <div class="color-dots">
+                    <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+                <h3>Apple Watch SE</h3>
+                <p>All the essentials.<br>Light on price.</p>
+                <p>From $249 or $20.75/mo. for 12 mo.</p>
+                <a href="watch1.html"><button>Learn more</button></a>
+                <button>Buy</button>
+                <a href="watch360SE.html">
+                    <button class="rotate-btn">Rotate in 360</button>
+                </a>
+
+                <div class="case-info">
+                    <p>44mm or 40mm aluminum case</p>
+                </div>
+                <div class="watch-option">
+                    <div class="heart-icon">♡</div>
+                    <p>High and low heart rate notifications</p>
+                    <p>Irregular rhythm notifications</p>
+                    <p>Low cardio fitness notifications</p>
+                    <div class="battery-icon">⚡️</div>
+                    <p>Up to 18 hours</p>
+                    <p>Low Power Mode</p>
+                </div>
+            </div>
+
+            <!-- Series 10 -->
+            <div class="watch-card">
+                <a href="watch2.html"><img src="../Images/watch2.png" alt="Apple Watch Series 10" style="height: 25%;width: 100%;"></a>
+                <div class="color-dots">
+                    <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+                <h3>Apple Watch Series 10</h3>
+                <p>Thinnest. Biggest display.<br>Advanced health features.</p>
+                <p>From $399 or $33.25/mo. for 12 mo.</p>
+                <a href="watch2.html"><button>Learn more</button></a>
+                <button>Buy</button>
+                <a href="watchSeries10.html">
+                    <button class="rotate-btn">Rotate in 360</button>
+                </a>
+                <div class="case-info">
+                    <p>46mm or 42mm aluminum or titanium case</p>
+                </div>
+                <div class="watch-option">
+                    <div class="heart-icon">♡</div>
+                    <p>ECG app</p>
+                    <p>High and low heart rate notifications</p>
+                    <p>Irregular rhythm notifications</p>
+                    <p>Low cardio fitness notifications</p>
+                    <p>Sleep apnea notifications</p>
+                    <div class="battery-icon">⚡️</div>
+                    <p>Up to 18 hours</p>
+                    <p>Up to 36 hours in Low Power Mode</p>
+                    <p>Fast charging</p>
+                </div>
+            </div>
+
+            <!-- Ultra 2 -->
+            <div class="watch-card">
+                <a href="watch3.html"><img src="../Images/watch3.png" alt="Apple Watch Ultra 2" style="height: 25%;width: 100%;"></a>
+                <div class="color-dots">
+                    <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+                <h3>Apple Watch Ultra 2</h3>
+                <p>The ultimate sports<br>and adventure watch.</p>
+                <p>From $799 or $66.58/mo. for 12 mo.</p>
+                <a href="watch3.html"><button>Learn more</button></a>
+                <button>Buy</button>
+                <br>
+                <a href="watch360Ultra.html">
+                    <button class="rotate-btn">Rotate in 360</button>
+                </a>
+                <div class="case-info">
+                    <p>49mm titanium case</p>
+                </div>
+                <div class="watch-option">
+                    <div class="heart-icon">♡</div>
+                    <p>ECG app</p>
+                    <p>High and low heart rate notifications</p>
+                    <p>Irregular rhythm notifications</p>
+                    <p>Low cardio fitness notifications</p>
+                    <p>Sleep apnea notifications</p>
+                    <div class="battery-icon">⚡️</div>
+                    <p>Up to 36 hours</p>
+                    <p>Up to 72 hours in Low Power Mode</p>
+                    <p>Fast charging</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="main-heading">Apple Watch Studio</h1>
+
+    <div class="watch-studio" style="background-color:white">
+        <div class="watch-text">
+            <h2>Mix.Match.Make it yours.</h2>
+            <p>Choose a case. Pick a band.<br> Configure your perfect watch.</p>
+            <a href="watchStudioPage1.html"><button>Create your style</button></a>
+        </div>
+        <div class="watch-grid">
+            <img src="../Images/sample5.png">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="watch-section">
+        <h2>Apple Watch</h2>
+        <div class="watch-columns">
+            <div class="column">
+                <h4>Explore Watch</h4>
+                <ul>
+                    <li><a href="compare.html">Compare All Apple Watch</a></li>
+                    <li><a href="watch2.html">Apple Watch Series 10</a></li>
+                    <li><a href="watch3.html">Apple Watch Ultra 2</a></li>
+                    <li><a href="watch1.html">Apple Watch SE</a></li>
+                    <li><a href="Nike.html">Apple Watch Nike</a></li>
+                    <li><a href="hermes.html">Apple Watch Hermès</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Shop Watch</h4>
+                <ul>
+                    <li><a href="shopWatch.html">Shop Apple Watch</a></li>
+                    <li><a href="watchStudioPage1.html">Apple Watch Studio</a></li>
+                    <li><a href="bandsSelection.html">Apple Watch Bands</a></li>
+                    <li><a href="privacy.html">Apple Watch Privacy</a></li>
+                    <li><a href="#">Apple Trade In</a></li>
+                    <li><a href="#">Financing</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>More from Watch</h4>
+                <ul>
+                    <li><a href="#">Apple Watch Support</a></li>
+                    <li><a href="#">AppleCare+</a></li>
+                    <li><a href="#">watchOS 11</a></li>
+                    <li><a href="#">Apple Watch For Your Kids</a></li>
+                    <li><a href="#">Apps by Apple</a></li>
+                    <li><a href="#">Apple Fitness+</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+<canvas id="spline-canvas"></canvas>
+<script type="module" src="index3D.js"></script>
+
+</html>

@@ -1,0 +1,52 @@
+/*!!!!!!!!!!Footer!!!!!!!!!!!!!!*/
+
+.watch-section {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.watch-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.watch-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 220px;
+    margin: 10px;
+}
+
+.column h4 {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 8px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.column ul li {
+    margin: 6px 0;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.column ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Selection</title>
+    <link rel="stylesheet" href="styleForWatchSelection.css" />
+</head>
+
+<body>
+    <!-- Left-aligned heading -->
+    <header class="page-heading">APPLE WATCH</header>
+
+    <div class="watch-container">
+        <img src="../Images/watchStudioImage1.png" alt="Watch" class="watch-img" />
+        <button id="band-btn" class="band-btn">Bands</button>
+    </div>
+
+    <script>
+        document.getElementById("band-btn").addEventListener("click", function() {
+            window.location.href = "bandsSelection.html";
+        });
+    </script>
+</body>
+
+</html>

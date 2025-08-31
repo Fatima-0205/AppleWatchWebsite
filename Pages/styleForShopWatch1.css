@@ -1,0 +1,429 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.watch-info {
+  color: black;
+  padding: 50px;
+  text-align: left;
+  max-width: 300px;
+}
+
+.watch-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.watch-info p {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Slider Styles */
+.slider {
+  position: relative;
+  width: 850px;           /* Small width for a compact look */
+  height: 500px;          /* Small height */
+  margin: 20px 40px 20px 200px;      /* Centered with top and bottom space */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* Crop to fill neatly */
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* Buttons */
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.slider-buttons button {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.slider-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lineup-section {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+
+}
+
+.lineup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+  padding: 0 10px;
+}
+
+.lineup-header h1 {
+  font-size: 2.5rem;
+  color: #1d1d1f;
+  margin: 0;
+}
+
+.compare-link {
+  color: #0071e3;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.watch-lineup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  background-color: whitesmoke;
+}
+
+.watch-card {
+ max-width: 250px;
+  background: #fff;
+  text-align: center;
+  background-color: whitesmoke;
+  
+}
+
+.watch-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain; /* Ensures the image fits inside without distortion */
+  display: block;
+  margin: 0 auto;
+  background-color: whitesmoke;
+}
+.color-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.color-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.color-dots .dot.active {
+  background: #1d1d1f;
+}
+
+.watch-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  color: #1d1d1f;
+}
+
+.watch-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0069d9;
+}
+
+.case-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+.watch-option {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+      color: #444;
+      text-align: left;
+    }
+
+    .heart-icon, .battery-icon {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+
+    .nav-buttons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.nav-btn {
+  padding: 8px 16px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.nav-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+.details-section {
+  margin-top: 100vh; 
+  padding: 40px;
+  max-width: 600px;
+  margin-left:40%;
+  margin-right: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+}
+
+.details-section h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.details-section h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+  color: #000;
+}
+
+.details-section p {
+  font-size:18px;
+  line-height: 1.6;
+  color: #333;
+  margin-left: 70%;
+  
+}
+#display{
+  margin-left: 70%;
+ 
+}
+#subHeading{
+  margin-left: 70%;
+ 
+}
+.connect-section {
+  margin-top: 40vh; /* Makes it appear after scrolling */
+  padding: 40px;
+  max-width: 600px;
+  margin-left: 100px; /* Shifts content to the right */
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+}
+
+.connect-section h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+  
+
+}
+
+.connect-section h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+  color: #000;
+  line-height: 1.2;
+
+}
+
+.connect-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+ 
+}
+.connect-section2 {
+  margin-top: 40vh; /* Makes it appear after scrolling */
+  padding: 40px;
+  text-align: center;
+  max-width: 600px;
+
+  margin-left: 25%; /* Shifts content to the right */
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+}
+.connect-section2 h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+  
+
+}
+
+.connect-section2 h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+  color: #000;
+  line-height: 1.2;
+
+}
+       /* For page -2*/
+body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #e5e5e5;
+      color: #000;
+    }
+
+    header {
+      background-color: #ffffff;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      background: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-buttons button {
+      border: 2px solid black;
+      background: white;
+      padding: 8px 18px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    /*!!!!!!!!!!Footer!!!!!!!!!!!!!!*/
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.watch-section {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.watch-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.watch-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+}
+
+.column h4 {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.column ul li {
+  margin: 6px 0;
+}
+
+.column ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.column ul li a:hover {
+  text-decoration: underline;
+}
+.paraLast {
+  background-color: white;
+  color: darkgrey;
+  font-size: 0.75rem; /* Smaller font for legal/disclaimer text */
+  text-align: center;
+  margin: 50px 300px 0 300px; /* Top: 50px, Left & Right: 50px, Bottom: 0 */
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 1.6;
+  max-width: 100%;
+  box-sizing: border-box;
+}

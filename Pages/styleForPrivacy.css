@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+}
+
+.hero {
+    position: fixed;
+    /* Keep it fixed in the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    /* Place behind the content */
+    overflow: hidden;
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: filter 0.5s ease;
+}
+
+#img.blur {
+    filter: blur(6px);
+}
+
+#privacy-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    transition: opacity 0.6s ease-in-out;
+    /* smooth fade */
+    z-index: 1;
+}
+
+#privacy-text.hidden {
+    opacity: 0;
+}
+
+.privacy-message {
+    margin-top: 100vh;
+    /* Start just after the full screen */
+    opacity: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    transition: opacity 1s ease-in-out;
+    color: white;
+    text-align: center;
+}
+
+.privacy-message.show {
+    opacity: 1;
+}
+
+.content {
+    padding: 40px;
+}
+
+.privacy-principles {
+    padding: 80px 20px;
+    background-color: transparent;
+    /* for blurred bg effect */
+    color: white;
+    text-align: center;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.privacy-principles h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.principle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.principle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    /* optional glass effect */
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.principle:hover {
+    transform: translateY(-6px);
+}
+
+.principle img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.principle h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.principle p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 250px;
+}
+
+.multicolor-heading {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    background: linear-gradient(270deg, blue, orange, purple, pink);
+    background-size: 600% 600%;
+    animation: gradientShift 8s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.sub-heading {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    /* Slightly heavier than .multicolor-heading (usually 600–700) */
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.description-paragraph {
+    text-align: left;
+    font-size: 0.8rem;
+    color: white;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+    font-weight: 500;
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* spacing between images */
+    margin-top: 40px;
+    flex-wrap: wrap;
+    /* allows wrapping on small screens */
+}
+
+.info-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* optional: smooth corners */
+}
+
+.black-section {
+    background-color: black;
+    padding: 60px 20px;
+    transition: background-color 0.6s ease-in-out;
+    text-align: center;
+}
+
+.black-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 2;
+    /* just above the image, below the text */
+}
+
+.black-overlay.active {
+    opacity: 1;
+}
+
+.apps-heading {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-left: 28%;
+    /* Shift slightly to the left */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.video-scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 80px;
+    padding-bottom: 10px;
+    padding-left: 180px;
+    /* 👈 shifts content toward center */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.video-scroll-container::-webkit-scrollbar {
+    display: none;
+    /* hides scrollbar in Chrome/Safari */
+}
+
+.video-row-scroll {
+    display: inline-flex;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.info-video {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    outline: none;
+    flex-shrink: 0;
+}
+
+.footer-image-container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    /* full width of the viewport */
+    overflow: hidden;
+}
+
+.footer-image,
+.centered-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
